@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-image:linear-gradient(45deg, rgb(201, 183, 171), rgb(255, 133, 84));
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100vh;
+    }
+    
+    .caixa-login{
+        background-color: rgb(0, 0, 0, 0.8 );
+        padding: 70px;
+        border-radius: 15px; 
+        color:white;
+    }
+
+    input{
+        padding: 15px;
+        border:none;
+        outline: none;
+        font-size:15px ;
+    }
+
+    button{
+        border:none;
+        padding: 10px;
+        width: 100% ;
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(231, 94, 117);
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        color: black;
+        background-color: rgba(255, 245, 245, 0.8);
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0, 0.8 );
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="loginForm" class="caixa-login">
+            <h1>Login</h1>
+            <input type="text" placeholder="Nome">
+            <br><br>
+            <input type="password" placeholder="Senha">
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>    
+        <a href="/"><< voltar para página inicial?</a>
+        <p id="response"></p>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>

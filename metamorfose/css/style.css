@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .caixa {
+    margin: 0 auto;
+    width: 1200px;
+ }
+ 
+ .linha {
+    display: flex;
+    align-items: center;
+    background-color: #ff8554;
+    height: 40px;
+ }
+ 
+ .redes-sociais {
+    display: flex;
+    justify-content: end;
+ }
+ 
+ .redes-sociais img {
+    width: 20px;
+    margin-left: 10px;
+ }
+ 
+ .redes-sociais ul {
+    display: flex;
+ }
+ 
+ .redes-sociais ul li {
+    list-style: none;
+ }
+ 
+ .menu-fixo {
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    justify-content: space-around !important;
+    animation-name: transicao-menu !important;
+    animation-duration: 0.4s !important;
+    z-index: 2;
+ }
+ 
+ .menu-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+ }
+ 
+ .logo img {
+    width: 200px;
+ }
+ 
+ .menu {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .menu ul{
+    display: flex;
+ }
+ 
+ .menu ul li{
+    list-style: none;
+ }
+ 
+ .menu ul li a {
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #545454;
+ }
+ 
+ .menu ul li a:hover {
+    color: #ff8554;
+ }
+ 
+ .banner {
+    display: flex;
+    align-items: center;
+    background: url(/img/fundo.jpg);
+    background-position: center, left;
+    background-repeat: no-repeat;
+    height: 607px;
+ }
+ 
+ .banner .texto {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    animation:  backInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+ }
+ 
+ .banner .texto h3{
+    font-family: 'Cookie', cursive;
+    font-size: 50px;
+ }
+ .banner .texto h2{
+    font-family:'Bodoni Moda', serif;
+    font-size: 60px;
+    color: azure;
+ }
+ 
+ .btn {
+    font-family:Arial, Helvetica, sans-serif;;
+    font-size: 15px;
+    color: rgb(10, 10, 10);
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 35px;
+ }
+ 
+ .banner .texto .btn {
+    background: #ff8554;   
+ }
+ 
+ .conteudo {
+    background-color: #F8F8F8;
+ }
+ 
+ .sobre { 
+    display: flex;
+    padding: 50px 0;
+    margin-bottom: 500px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    border-bottom: 2px solid #ff8554;   
+ }
+ 
+ .sobre .titulo { 
+    display: flex;
+    width: 50%;
+    flex-direction:column ;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+ }
+ 
+ .sobre .titulo hr{ 
+    width: 140px;
+    background: #ff8554;
+    height: 2px;
+    border: none;   
+ }
+ 
+ .sobre .descricao { 
+    display: flex;
+    width: 50%;
+    font-size: 20px;
+    text-align: justify;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif ;
+    line-height: 35px;
+ }
+ 
+ .servicos {
+    padding: 30px 0;
+ }
+ 
+ .titulo-servicos h2 {
+    text-align: center;
+ }
+ 
+ .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ .servicos .card {
+    width: 320px;
+    height: 350px;
+    background-size: cover;
+    display: flex ;
+    margin: 7px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: end;
+    
+ }
+ 
+ .servicos .card::before {
+    content: '';
+    background: #00000052;
+    width: 320px;
+    height: 350px;
+    position: absolute;
+    
+ }
+ 
+ .servicos .card.estetica-facial {
+    background-image: url(/img/estetica-facial.jpg);
+ }
+ 
+ .servicos .card.estetica-corporal {
+    background-image: url(/img/estetica-corporal.jpg);
+ }
+ 
+ .servicos .card.designer-de-sombranselhas {
+    background-image: url(/img/designer-de-sombrancelhas.jpg);
+ }
+ 
+ .servicos .card.alisamento {
+    background-image: url(/img/alisamentos.jpg);
+ }
+ 
+ .servicos .card.recostrucoes-capilares {
+    background-image: url(/img/reconstrucoes-capilares.jpg);
+ }
+ 
+ .servicos .card.esmaltaria {
+    background-image: url(/img/esmaltaria.jpg);
+ }
+ 
+ .servicos .card.cortes {
+    background-image: url(/img/cortes.jpg);
+ }
+ 
+ .servicos .card.depilacao {
+    background-image: url(/img/depilacao.jpg);
+ }
+ 
+ .servicos .card.makeup {
+    background-image: url(/img/makeup.jpg);
+ }
+ 
+ .servicos h3{
+    text-align: center;
+    margin-bottom: 8px;
+    color: white;
+    z-index: 1;   
+    text-shadow: black 0.1em 0.1em 0.2em;
+ }
+ 
+ .contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .rodape h2 {
+    font-size: 20px;
+    margin: 10px;
+    display:flex;
+    text-align: center;
+ }
+ 
+ .rodape .entre-contato {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px;
+    font-family: 'Cookie', cursive;
+ }
+ 
+ .rodape .como-encontrar {
+    text-align: center;
+    font-size: 35px;
+    font-family:Arial, Helvetica, sans-serif
+ }
+ 
+ .rodape img {
+    width: 30px;
+ }
+ 
+ .rodape .rodape-colunas {
+    display: flex;
+    padding: 40px;
+ }
+ 
+ .rodape .coluna-rodape {
+    width: 33.33333333333333%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .rodape ul li{
+    list-style: none;
+    margin-left: 15px;
+ }
+ 
+ .rodape ul {
+    display: flex;
+ }
+ 
+ .pergunta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    padding: 30px 0;
+ 
+    background-color: #ff8554;
+ }
+ 
+ .pergunta h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+ }
+ 
+ .pergunta input,
+ .pergunta textarea {
+    width: 100%;
+    border: 1px solid #ff8554;
+    margin: 5px 0;
+    padding: 20px 15px;
+    border-radius: 5px;
+ }
+ 
+ 
+ 
+ @keyframes transicao-menu {
+    0% {
+       top: -70px;
+       opacity: 0;
+   }
+   
+   100% {
+       top: 0;
+       opacity: 1;
+   }
+ }
